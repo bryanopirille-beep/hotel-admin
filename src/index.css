@@ -42,3 +42,9 @@ body {
     align-items: end;
   }
 }
+body {
+  margin: 0;
+  background-color: #0f172a; /* Color de fondo oscuro original */
+  color: #f8fafc;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
