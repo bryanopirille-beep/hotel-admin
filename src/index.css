@@ -1,28 +1,36 @@
-/* Contenedor principal de la app con padding adaptable */
+/* --- ESTILOS GLOBALES / TEMA OSCURO ORIGINAL --- */
+body {
+  margin: 0;
+  background-color: #0f172a; /* Fondo oscuro original (Slate / Azul oscuro) */
+  color: #f8fafc; /* Color de texto claro por defecto */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Contenedor principal adaptable */
 .admin-dashboard {
   padding: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Tarjetas de métricas: 1 columna en celular, 3 en PC */
+/* --- TARJETAS DE MÉTRICAS (MOBILE FIRST) --- */
 .metrics-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* 1 columna en celulares */
   gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
   .metrics-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
   }
 }
 
-/* Formulario de reservas: se adapta en columnas según la pantalla */
+/* --- FORMULARIO DE RESERVAS (MOBILE FIRST) --- */
 .booking-form {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Apilado en celulares */
   gap: 1rem;
   padding: 1rem;
 }
